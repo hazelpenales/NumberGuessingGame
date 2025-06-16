@@ -13,7 +13,7 @@ public class NumberGuessingGamedraft {
         String playerName = scanner.nextLine();
         System.out.println("-----------------------------------------------------------");
         
-        do { // Omela
+        do { 
             Random random = new Random(); 
             int randomNumber = random.nextInt(50) + 1;
             int guess;
