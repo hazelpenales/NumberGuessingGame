@@ -24,13 +24,13 @@ public class NumberGuessingGamedraft {
             System.out.println("You have " + maxAttempts + " attempts to guess it correctly. Good luck!!!!");
             System.out.println("-----------------------------------------------------------"); 
 
-            while (attempts < maxAttempts) { // Arjean
+            while (attempts < maxAttempts) { 
                 System.out.print("(" + (maxAttempts - attempts) + " attempts left) Enter your guess: ");
                 guess = scanner.nextInt();
                 scanner.nextLine(); 
                 attempts++;
 
-                if (guess < randomNumber) {   // Jeziel 
+                if (guess < randomNumber) {   
                     System.out.println("------------------------");
                     System.out.println("Too Cold!");
                     System.out.println("------------------------");
@@ -46,13 +46,13 @@ public class NumberGuessingGamedraft {
                 }
             }
 
-            if (attempts == maxAttempts) { // Celeste
+            if (attempts == maxAttempts) {
                 System.out.println("----------------------------------------------------------");
                 System.out.println("Sorry, " + playerName + ". You lose the game. The final number was " + randomNumber + ".");
                 System.out.println("----------------------------------------------------------");
             }
 
-            System.out.println("---------------------------------------"); // Elija
+            System.out.println("---------------------------------------");
             System.out.println("      Thanks for playing, " + playerName + "! ");
             System.out.println("---------------------------------------");
             System.out.println("-----------------------------------------------");
